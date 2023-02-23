@@ -12,10 +12,9 @@ public class App {
      * @param args args
      * @throws IOException Por si algo sale mal en el proceso
      */
-    public static void main(String[] args) throws IOException {
-
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         HttpServer server = HttpServer.getInstance();
-        server.run(args);
+        server.run();
     }
 
 }

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"edu.eci.arep.app"},{"l":"edu.eci.arep.app.anotaciones"},{"l":"edu.eci.arep.app.controllers"},{"l":"edu.eci.arep.app.requesters"}];updateSearchResults();

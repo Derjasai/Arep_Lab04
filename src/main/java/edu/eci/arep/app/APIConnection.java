@@ -1,4 +1,4 @@
-package edu.escuelaing.arep.app;
+package edu.eci.arep.app;
 
 import java.io.BufferedReader;
 import java.io.IOException;

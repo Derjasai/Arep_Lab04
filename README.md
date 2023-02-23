@@ -1,5 +1,7 @@
 # AREP Taller 4
-
+Construcción de un POJO mediante anotaciones las cuales nos permite identificar cuales clases van a ser usadas.
+Este proyecto corresponde a la simulación de un servidor Web de tipo apache en Java. Es posible leer archivos 
+HTML, CSS, JS e imagenes PNG y JPG.
 
 ## Iniciando
 
@@ -13,35 +15,32 @@
 
 Para correr el programa primero descargue el repositorio con el siguiente comando
 ```
-git clone https://github.com/Derjasai/AREP_Lab03.git
+git clone https://github.com/Derjasai/Arep_Lab04.git
 ```
 
 Una vez clonado el repositorio ingrese en la carpeta descargada y corra el siguiente comando para ejecutar el programa
 
 ```
-mvn clean package exec:java -D"exec.mainClass"="edu.escuelaing.arep.app.App"
+java -cp target/classes edu.eci.arep.app.App
 ```
 
-Finalmente ingrese al navegador de su preferencia con el siguiente link:  http://localhost:35000/apps/index.html
+Finalmente ingrese al navegador de su preferencia con el siguiente link:  http://localhost:35000/
 
 En este caso se verá la página html que fue creada, en caso de buscar un servicio que no existe en el momento se le dirigirá a una página de error 404, por ejemplo usando el siguiente link:  
-http://localhost:35000/apps/a.html
+http://localhost:35000/a
 
-Si desea ver como tal un archivo deseado, como por ejemplo solo el css, ingrese al siguiente link:  
-http://localhost:35000/apps/index.css
+Para poder ver una imagen png ingrese al siguiente link:  http://localhost:35000/huTao
 
 ## Pruebas realizadas
 
-Funcionamiento del post:
-![img.png](../Arep_Lab03/imgs/img.png)
-Como nos podemos dar cuenta al momento de realizar el post nuestra respuesta es un JSON, así mismo recibimos el código 201 el cual hace referencia a que la creación fue exitosa
+Como podemos ver en este caso estamos solicitando el recurso de index
+![img.png](img.png)
 
-Funcionamiento del get:
-![img_1.png](../Arep_Lab03/imgs/img_1.png)
-Al momento de hacer el get nos fijamos que nos obtiene el html que tenemos guardado con el nombre de index.html, en caso de que el usuario indique un recurso que no existe en este momento lo dirigiremos a la siguiente pantalla:
-![img_2.png](../Arep_Lab03/imgs/img_2.png)  
-Como podemos fijarnos mediante postman podemos ver el código de error que nos genera al tener buscar un recurso que no existe
-![img_3.png](../Arep_Lab03/imgs/img_3.png)
+Ahora vamos a hacer la consulta de la imagen png:
+![img_1.png](img_1.png)
+
+Finalmente, hacemos la consulta de un servicio que no fue agregado en las notaciones
+![img_2.png](img_2.png)
 
 ## Documentación
 
